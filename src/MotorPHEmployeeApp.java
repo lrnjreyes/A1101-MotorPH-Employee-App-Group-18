@@ -63,9 +63,7 @@ public class MotorPHEmployeeApp extends JFrame {
         passwordField = new JPasswordField();
 
         JButton loginButton = new JButton("Login");
-        loginButton.setBackground(new Color(30, 60, 120));
-        loginButton.setForeground(Color.WHITE);
-        loginButton.setFont(new Font("Arial", Font.BOLD, 13));
+        styleButton(loginButton, new Color(30, 60, 120));
 
         gbc.gridx = 0; gbc.gridy = 0; gbc.gridwidth = 2;
         panel.add(title, gbc);
@@ -889,5 +887,7 @@ public class MotorPHEmployeeApp extends JFrame {
         btn.setForeground(Color.WHITE);
         btn.setFont(new Font("Arial", Font.BOLD, 12));
         btn.setFocusPainted(false);
+        btn.setOpaque(true);
+        btn.setBorderPainted(false);
     }
 }
